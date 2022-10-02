@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <title>My Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">My Work Day <br>Scheduler</h1></br></h1></h1>
+      <p class="lead">My Simple Calendar <br>
+         An app for scheduling your work day</p><br></p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+  <!-- Timeblocks go here -->
+
+      <form>
+        <div class="row" id="8am-card">
+          <div class="col card">8am</div>
+          <textarea class="col-8 card form-control" id="8am-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store8am()" id="8am-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="9am-card">
+          <div class="col card">9am</div>
+          <textarea class="col-8 card form-control" id="9am-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store9am()" id="9am-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="10am-card">
+          <div class="col card">10am</div>
+          <textarea class="col-8 card form-control" id="10am-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store10am()" id="10am-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="11am-card">
+          <div class="col card">11am</div>
+          <textarea class="col-8 card form-control" id="11am-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store11am()" id="11am-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="12pm-card">
+          <div class="col card">12pm</div>
+          <textarea class="col-8 card form-control" id="12pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store12pm()" id="12pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="1pm-card">
+          <div class="col card">1pm</div>
+          <textarea class="col-8 card form-control" id="1pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store1pm()" id="1pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="2pm-card">
+          <div class="col card">2pm</div>
+          <textarea class="col-8 card form-control" id="2pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store2pm()" id="2pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="3pm-card">
+          <div class="col card">3pm</div>
+          <textarea class="col-8 card form-control" id="3pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store3pm()" id="3pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="4pm-card">
+          <div class="col card">4pm</div>
+          <textarea class="col-8 card form-control" id="4pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store4pm()" id="4pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="5pm-card">
+          <div class="col card">5pm</div>
+          <textarea class="col-8 card form-control" id="5pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store5pm()" id="5pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="6pm-card">
+          <div class="col card">6pm</div>
+          <textarea class="col-8 card form-control" id="6pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store6pm()" id="6pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="7pm-card">
+          <div class="col card">7pm</div>
+          <textarea class="col-8 card form-control" id="7pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store7pm()" id="7pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="8pm-card">
+          <div class="col card">8pm</div>
+          <textarea class="col-8 card form-control" id="8pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store8pm()" id="8pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="9pm-card">
+          <div class="col card">9pm</div>
+          <textarea class="col-8 card form-control" id="9pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store9pm()" id="9pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="10pm-card">
+          <div class="col card">10pm</div>
+          <textarea class="col-8 card form-control" id="10pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store10pm()" id="10pm-save">Save</button>
+        </div>
+      </form>
+      <form>
+        <div class="row" id="11pm-card">
+          <div class="col card">11pm</div>
+          <textarea class="col-8 card form-control" id="11pm-content"></textarea>
+          <button  class="btn btn-primary col" onclick="store11pm()" id="11pm-save">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/JS/script.js"></script>
+  </body>
+</html>
